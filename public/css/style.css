@@ -1,0 +1,249 @@
+* {
+    font-family: 'Old Standard TT', serif;
+    /* color: #343841; */
+}
+a {
+    color: #343841;
+}
+
+body {
+    margin: 0;
+    background-color: #F1F3F2;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+textarea {
+    resize: none;
+    min-height: 4rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.nav {
+    font-size: 2vh;
+    color: #343841;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.dish {
+    height: 8rem;
+}
+
+.check {
+  height: 25vw; 
+  padding: 1rem; 
+}
+
+.title {
+    font-size: 8vw;
+    margin: 0;
+    color: #343841;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.5s;
+    width: 25rem;
+    margin: 1rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #343841;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 black;
+    flex-grow: 0.4;
+    cursor: pointer;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dashboard {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.restaurant {
+    box-shadow: 0 4px 8px 0 black;
+    margin: 1rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    flex: 2;
+}
+
+.content-info {
+    align-items: center;
+    display: flex;
+}
+
+.info {
+    background-color: #343841;
+    color: white;
+    padding: 1rem;
+}
+
+.description {
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    flex: 1;
+}
+
+.logout {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logout-flex {
+    box-shadow: 0 4px 8px 0 black;
+    margin: 1rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}   
+
+.shrink {
+    display: flex;
+    justify-content: center;
+}
+
+.logout-info {
+    background-color: #343841;
+    color: white;
+    padding: 1rem;
+    font-size: 4vw;
+}
+
+.frame {
+    box-shadow: 0 4px 8px 0 black;
+    width: 20rem;
+    margin: 1rem;
+    background-color:white;
+    padding: 1rem;
+}
+
+.form-text {
+    padding: 1rem 0;
+}
+
+.form-input {
+    min-height: 2rem;
+    font-size: 1rem;
+}
+
+.form-btn {
+    min-height: 2rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.review-frame {
+    box-shadow: 0 4px 8px 0 black;
+    width: -webkit-fill-available;
+    margin: 1rem;
+    background-color:white;
+    padding: 1rem;
+}
+
+.thumbsup {
+    height: 5vh;
+}
+
+.user-review {
+    border-top: #343841 solid 3rem;
+    padding: 0.5rem 1rem;
+}
+
+.review-text {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.review-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-post {
+    box-shadow: 0 4px 8px 0 black;
+    margin: 1rem;
+    background-color:white;
+    padding: 1rem;
+    flex: 1;
+}
+
+.user-posted {
+    box-shadow: 0 4px 8px 0 black;
+    margin: 1rem;
+    background-color:white;
+    padding: 1rem;
+    flex: 1;
+    height: fit-content;
+}
+
+.user-restaurants {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.user-btn {
+    width: 5rem;
+}
+
+.profile-dashboard {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px) {
+    .profile-dashboard {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

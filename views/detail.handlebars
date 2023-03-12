@@ -1,0 +1,44 @@
+<section class="profile-dashboard">
+  <div class="animate__animated animate__fadeInUp animate__delay-1s restaurant">
+    <div class="content-info">
+    <div class="info">
+      <h2>{{values.name}}</h2>
+      <h3>{{values.type_id}}</h3>
+      <h3>Price: {{values.price}}</h3>
+      <p>{{values.address}}</p>
+    </div>
+    <div class="description">
+    <h3>Description</h3>
+      <p>{{values.description}}</p>
+      {{!-- <p>Posted by {{username}}</p> --}}
+    </div>
+  </div>
+  </div>
+
+  <section class="animate__animated animate__fadeInUp animate__delay-2s form-flex">
+    <form class="form-box review-frame review-submit-form">
+      <div class="review-title">
+      <label><h2>Add a Review</h2></label>
+      <img src="/css/images/review.png" class="thumbsup">
+      </div>
+      <textarea name="comment-body" placeholder="Leave your review here" id="review-text"></textarea>
+
+      <button type="submit" class="form-btn" id="review-submit-btn" locale-id="{{values.id}}" user-id="{{userId}}" name-id="{{name}}">Submit</button>
+  </form>
+  </section>
+
+
+</section>
+
+{{#if locales.length}}
+{{#each locales as |locales|}}
+<section class="animate__animated animate__fadeInUp animate__delay-3s restaurant">
+  <div class ="user-review">
+  <p class="review-text">"{{locales.reviewtext}}"</p>
+  <p>Posted by {{locales.name}}</p>
+</div>
+</section>
+{{/each}}
+{{/if}}
+
+<script src="/js/review.js"></script>

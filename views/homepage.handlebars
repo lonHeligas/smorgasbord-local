@@ -1,0 +1,15 @@
+<section class="dashboard">
+{{#each values as |values|}}
+    <div class="animate__animated animate__fadeInUp animate__delay-1s card">
+      <div class="content" data-id="{{values.id}}">
+      <div><a href="/api/details/{{values.id}}"><img src="/css/images/dish.jpg" class="dish"></a></div>
+        <div>
+          <a href="/api/details/{{values.id}}"><h2>{{values.name}}</h2></a>
+          <p>Posted on {{format_date values.createdAt}}</p>
+        </div>
+      </div>
+    </div>
+{{/each}}
+</section>
+
+<script src="./js/homepage.js"></script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">   
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Sm&ouml;rg&aring;sbord</title>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <a href="/"><h1 class="title">Sm&ouml;rg&aring;sbord</h1></a>
+        <a href="/"><img src="/css/images/food-icon.jpeg" class="logo"></a>      
+        <nav class="nav">
+        {{#if logged_in}}
+        <a href="/profile">Profile</a> |
+        <a href="/logout">Logout</a>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
+        </nav>
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+</body>
+</html>
